@@ -1,0 +1,146 @@
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 20px;
+}
+/* ------------------ */
+.page {
+  padding: 30px;
+  background: url('../img/light-grey-terrazzo.png');
+}
+a {
+  color: #000;
+}
+/* Header start */
+.header {
+  background: #aa55ff;
+}
+
+.header__wrapper {
+  max-width: 90%;
+  margin: 0px auto;
+}
+.header__menu {
+}
+.header__list {
+  text-align: center;
+  font-size: 0;
+}
+.header__list > li {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+}
+.header__list > li:first-child {
+  margin-left: 0px;
+}
+.header__list > li:last-child .header__sub-list-level-3 {
+  left: auto;
+  right: 100%;
+}
+.header__list li:hover .header__sub-list {
+  display: block;
+}
+.header__list li:hover .header__link {
+  color: #fff;
+  background: #111112;
+}
+.header__link {
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.header__sub-list {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #2288ff;
+  padding: 15px 0;
+}
+.header__sub-list > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.header__sub-list > li:last-child {
+  margin-bottom: 0px;
+}
+.header__sub-list li:hover .header__sub-link {
+  color: #000;
+  background: #99aaff;
+}
+.header__sub-list li:hover .header__sub-list-level-3 {
+  display: block;
+}
+.header__sub-link {
+  display: inline-block;
+  font-size: 18px;
+  width: 100%;
+  color: #fff;
+  padding: 6px 15px;
+}
+.header__sub-list-level-3 {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  left: 100%;
+  background: #00aa00;
+  padding: 15px 0;
+}
+.header__sub-list-level-3 > li {
+  margin-bottom: 10px;
+}
+.header__sub-list-level-3 > li:last-child {
+  margin-bottom: 0px;
+}
+.header__sub-link-level-3 {
+  display: inline-block;
+  padding: 6px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header__sub-link-level-3:hover {
+  color: #000;
+  background: #00ff00;
+  width: 100%;
+}
+/* Header end */
+
+/* Main start */
+
+/* Main end */
